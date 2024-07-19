@@ -64,9 +64,8 @@
 
 ## Screenshot 🖼️
 
-![image](https://github.com/user-attachments/assets/a7f1f6f1-fed3-4edb-ae15-b99c4a1371a0)
-![image](https://github.com/user-attachments/assets/000571f7-4b4b-4fed-a48b-2382bcb8a4a4)
-![image](https://github.com/user-attachments/assets/bfa8681b-aa2e-436a-ba7b-093caaf0acac)
+![image](https://github.com/user-attachments/assets/b20f2d9f-8be3-4e6c-947a-2446711b360c)
+![image](https://github.com/user-attachments/assets/3580b61c-4636-4535-9d49-e5f8b9cf8228)
 
 
 
