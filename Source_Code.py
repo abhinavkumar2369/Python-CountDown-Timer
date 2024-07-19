@@ -7,6 +7,7 @@ class CountdownTimer:
         self.master = master
         self.master.title("Countdown Timer")
         self.master.geometry("300x200")
+        self.master.resizable(False, False)
 
         self.time_left = 0
         self.running = False
