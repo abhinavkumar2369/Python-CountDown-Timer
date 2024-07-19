@@ -1,14 +1,32 @@
 import tkinter as tk
 from tkinter import ttk
 import time
+from tkinter import PhotoImage
+
+
+
+# --------------------------------------------------
+
+
+# Ensure High DPI awareness on Windows
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
+
+
+# --------------------------------------------------
+
+
 
 class CountdownTimer:
     def __init__(self, master):
         self.master = master
         self.master.title("Countdown Timer")
-        self.master.geometry("300x200")
+        self.master.geometry("400x250")
         self.master.resizable(False, False)
-
+        
         self.time_left = 0
         self.running = False
 
@@ -20,13 +38,13 @@ class CountdownTimer:
         self.entry.insert(0, "00:00:00")
 
         self.start_button = ttk.Button(self.master, text="Start", command=self.start_timer)
-        self.start_button.pack(side=tk.LEFT, padx=10)
+        self.start_button.pack(side=tk.LEFT, padx=15)
 
         self.stop_button = ttk.Button(self.master, text="Stop", command=self.stop_timer)
-        self.stop_button.pack(side=tk.LEFT, padx=10)
+        self.stop_button.pack(side=tk.LEFT, padx=15)
 
         self.reset_button = ttk.Button(self.master, text="Reset", command=self.reset_timer)
-        self.reset_button.pack(side=tk.LEFT, padx=10)
+        self.reset_button.pack(side=tk.LEFT, padx=15)
 
     def start_timer(self):
         if not self.running:
@@ -63,5 +81,7 @@ class CountdownTimer:
 
 if __name__ == "__main__":
     root = tk.Tk()
+    logo = PhotoImage(file='logo.png')
+    root.iconphoto(False, logo)
     timer = CountdownTimer(root)
     root.mainloop()
